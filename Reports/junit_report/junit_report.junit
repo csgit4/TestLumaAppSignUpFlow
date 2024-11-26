@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="39.635" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="HomePage functionality" name="Create new customer account with valid details" time="24.666">
+<system-out><![CDATA[
+Given user is on the home page..............................................passed
+When user click on Create an Account link...................................passed
+Then user redirected to the account creation page and verify title is "Create New Customer Account".passed
+When user enter valid firstname: "Somnath"..................................passed
+And enter valid lastname: "Shinde"..........................................passed
+And enter valid email: "newuser561@example.com".............................passed
+And enter valid password: "StrongPassword!23"...............................passed
+And enter valid confirm password: "StrongPassword!23".......................passed
+And click on Create an Account button.......................................passed
+Then user account should be created and verify message "Thank you for registering with Main Website Store.".passed
+]]></system-out>
+</testcase>
+<testcase classname="HomePage functionality" name="Sign-in with already registered email" time="14.448">
+<system-out><![CDATA[
+Given user is on the home page..............................................passed
+When user click on Sign In link.............................................passed
+Then user redirected to the customer login page and verify title is "Customer Login".passed
+When the user enters registered email: "newuser561@example.com".............passed
+And valid password: "StrongPassword!23".....................................passed
+And clicks the Sign In button...............................................passed
+Then user should successfully Sign-in into the system and see greet message as "Welcome, Somnath Shinde!".passed
+]]></system-out>
+</testcase>
+</testsuite>
